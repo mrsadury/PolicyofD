@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why I Need Your Donation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #f86f03;
+      --bg: linear-gradient(135deg, #202647, #4e4b9b);
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      transition: all 0.4s ease;
+    }
+    .container {
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 1rem;
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1.5s ease forwards;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin: 1rem 0;
+    }
+    .highlight {
+      color: #f9d342;
+      font-weight: bold;
+    }
+    .btn, .lang-btn {
+      margin-top: 2rem;
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn:hover, .lang-btn:hover {
+      background: #ff9000;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" id="content">
+    <h1 id="title">কেন আমার ডোনেশন প্রয়োজন?</h1>
+    <p id="text1">আসসালামু আলাইকুম! আমি <span class="highlight">আয়াত</span>, একজন কনটেন্ট ক্রিয়েটর। আমি চেষ্টা করি মানসম্মত, শিক্ষনীয় ও ইসলামিক কনটেন্ট তৈরি করতে, যাতে মানুষ উপকৃত হয়।</p>
+    <p id="text2">আমার কনটেন্টগুলোতে কোনো <span class="highlight">YouTube Ads</span> থাকে না, কারণ সেগুলোতে <span class="highlight">Music, Adult, Dating</span> ও বিভিন্ন <span class="highlight">Haram Content</span> এর বিজ্ঞাপন আসে, যা ইসলামিক দিক থেকে গ্রহণযোগ্য নয়।</p>
+    <p id="text3">আমি YouTube থেকে কোনো টাকা পাই না। আমার কনটেন্ট ফ্রি, কিন্তু এগুলো তৈরি করতে <span class="highlight">সময়, শ্রম, সফটওয়্যার, হোস্টিং</span> ইত্যাদি খরচ হয়। তাই, আমি চাই <span class="highlight">হালাল উপায়ে</span> এই কাজ চালিয়ে যেতে, আপনাদের সাপোর্ট দরকার।</p>
+    <p id="text4">আপনি চাইলে সরাসরি <span class="highlight">বিকাশ (01318-228418)</span> অথবা <span class="highlight">নগদ (01837941711)</span> এ সাহায্য করতে পারেন।</p>
+
+    <a href="donation.html" class="btn" id="donateBtn">ডোনেশন পেজে যান</a>
+    <button class="lang-btn" id="toggleLang">Switch to English</button>
+  </div>
+
+  <script>
+    const content = {
+      bn: {
+        title: "কেন আমার ডোনেশন প্রয়োজন?",
+        text1: "আসসালামু আলাইকুম! আমি আয়াত, একজন কনটেন্ট ক্রিয়েটর। আমি চেষ্টা করি মানসম্মত, শিক্ষনীয় ও ইসলামিক কনটেন্ট তৈরি করতে, যাতে মানুষ উপকৃত হয়।",
+        text2: "আমার কনটেন্টগুলোতে কোনো YouTube Ads থাকে না, কারণ সেগুলোতে Music, Adult, Dating ও বিভিন্ন Haram Content এর বিজ্ঞাপন আসে, যা ইসলামিক দিক থেকে গ্রহণযোগ্য নয়।",
+        text3: "আমি YouTube থেকে কোনো টাকা পাই না। আমার কনটেন্ট ফ্রি, কিন্তু এগুলো তৈরি করতে সময়, শ্রম, সফটওয়্যার, হোস্টিং ইত্যাদি খরচ হয়। তাই, আমি চাই হালাল উপায়ে এই কাজ চালিয়ে যেতে, আপনাদের সাপোর্ট দরকার।",
+        text4: "আপনি চাইলে সরাসরি বিকাশ (01318-228418) অথবা নগদ (01837941711) এ সাহায্য করতে পারেন।",
+        btn: "ডোনেশন পেজে যান",
+        langBtn: "Switch to English"
+      },
+      en: {
+        title: "Why I Need Your Donation?",
+        text1: "Assalamu Alaikum! I am Ayat, a content creator. I try to create high-quality, educational, and Islamic content that benefits people.",
+        text2: "My content does not include any YouTube Ads, because they promote Music, Adult, Dating, and other Haram content which is not acceptable Islamically.",
+        text3: "I earn nothing from YouTube. My content is free, but creating it requires time, effort, software, and hosting. I want to continue this work in a halal way, and I need your support.",
+        text4: "You can support me directly via Bkash (01318-228418) or Nagad (01837941711).",
+        btn: "Go to Donation Page",
+        langBtn: "বাংলায় দেখুন"
+      }
+    };
+
+    const toggleBtn = document.getElementById('toggleLang');
+    let currentLang = 'bn';
+
+    toggleBtn.addEventListener('click', () => {
+      currentLang = currentLang === 'bn' ? 'en' : 'bn';
+      document.getElementById('title').textContent = content[currentLang].title;
+      document.getElementById('text1').textContent = content[currentLang].text1;
+      document.getElementById('text2').textContent = content[currentLang].text2;
+      document.getElementById('text3').textContent = content[currentLang].text3;
+      document.getElementById('text4').textContent = content[currentLang].text4;
+      document.getElementById('donateBtn').textContent = content[currentLang].btn;
+      toggleBtn.textContent = content[currentLang].langBtn;
+    });
+  </script>
+
+</body>
+</html>
